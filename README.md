@@ -2,6 +2,11 @@
 
 Laboratorio en el que cada participante elige una fuente de datos y, **con un solo prompt**, la procesa de Bronze a Gold y obtiene un producto final (agente o dashboard) usando la IA de Snowflake: Cortex Code, Cortex Analyst y Cortex Agents.
 
+## Repositorio del laboratorio
+Este laboratorio usa el repositorio: **https://github.com/itzdata/snowflake-lab-coffee-v2.git**
+(público, sin credenciales). Es el que se conecta a Snowflake para crear el workspace de cada participante
+(Projects » Workspaces » From Git repository).
+
 ## Estructura
 ```
 AGENTS.md                         # Reglas globales que Cortex Code lee siempre
@@ -19,7 +24,7 @@ participants/                     # Aquí se guarda el SQL que genera cada parti
    (Snowsight » Data » Add Data » Load files into a stage).
 3. Asignar el rol: `GRANT ROLE COFFEE_LAB_PARTICIPANT TO USER <usuario>;`
 4. Cada participante crea su workspace desde este repo
-   (Projects » Workspaces » From Git repository, integration `GITHUB_ITZDATA`).
+   (Projects » Workspaces » From Git repository, integration `GITHUB_ITZDATA`, repo `https://github.com/itzdata/snowflake-lab-coffee-v2.git`).
 
 ## Guía del participante
 1. Abre tu workspace del repo y Cortex Code, con el rol `COFFEE_LAB_PARTICIPANT`.
