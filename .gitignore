@@ -1,0 +1,7 @@
+CLAUDE.local.md
+.claude/settings.local.json
+.env
+*.token
+.secrets/
+__pycache__/
+*.pyc

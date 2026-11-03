@@ -1,0 +1,17 @@
+# Configuración del servidor MCP de Snowflake (snowflake-labs-mcp), referenciado desde .mcp.json.
+# MCP = protocolo para conectar a Claude con herramientas externas. Aquí exponemos solo consultas de lectura
+# sobre la capa Gold y la semantic view del participante (principio de mínimo privilegio).
+other_services:
+  object_manager: false
+  query_manager: true
+sql_statement_permissions:
+  - Select: true
+  - Describe: true
+  - Show: true
+  - Use: true
+  - Create: false
+  - Drop: false
+  - Insert: false
+  - Delete: false
+  - Truncate: false
+  - Alter: false

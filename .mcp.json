@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "snowflake": {
+      "command": "uvx",
+      "args": [
+        "snowflake-labs-mcp",
+        "--service-config-file",
+        ".claude/snowflake_mcp_services.yaml",
+        "--connection-name",
+        "${SF_CONNECTION:-itzdata}"
+      ]
+    }
+  }
+}

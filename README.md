@@ -46,3 +46,11 @@ Resultado esperado (INI = `GG`):
 - **Cortex Code**: genera todo el pipeline a partir de un prompt y de las reglas del repo.
 - **Cortex Analyst** (semantic views) y **Cortex Agents**: preguntas en lenguaje natural sobre Gold.
 - Fuera de alcance (por consumo de tokens): funciones AISQL de enriquecimiento (AI_SENTIMENT, AI_EXTRACT, …).
+
+## Versión Claude Code
+Este repo también funciona con **Claude Code** (CLI, escritorio o IDE). Todo el comportamiento está en archivos versionados:
+`CLAUDE.md`, `.claude/` (reglas, permisos, hooks, skills, comandos, subagentes, estilo de salida), `.mcp.json` y `scripts/sf.py`.
+- Guía de cada elemento y cómo interactúa Claude con él: [`docs/CLAUDE_CODE_GUIDE.md`](docs/CLAUDE_CODE_GUIDE.md)
+- Inicio rápido: abre el repo en Claude Code, ejecuta `/lab-start Nombre Apellido` y pide en lenguaje natural:
+  *"Procesa la fuente VENTAS de bronze a gold y quiero un agente y un dashboard."*
+- Ejemplo completo ya ejecutado: `participants/CC_VENTAS_DEMO/` (datos sintéticos en `datasets/demo/`, generados con `scripts/gen_demo_data.py`).
